@@ -35,6 +35,11 @@ class AlbumTableViewCell: UITableViewCell {
         let imgView = UIImageView()
         imgView.contentMode = .scaleAspectFit
         imgView.clipsToBounds = true
+        let actIndView = UIActivityIndicatorView()
+        actIndView.center = imgView.center
+        actIndView.style = .large
+        actIndView.startAnimating()
+        imgView.addSubview(actIndView)
         return imgView
     }()
     

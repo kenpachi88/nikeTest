@@ -52,7 +52,7 @@ struct Result: Codable {
     let copyright, artistID: String
     let contentAdvisoryRating: ContentAdvisoryRating?
     let artistURL: String
-    let artworkUrl100: String
+    var artworkUrl100: String
     let genres: [Genre]
     let url: String
     var imageData: Data?
