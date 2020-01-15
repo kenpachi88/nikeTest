@@ -28,7 +28,7 @@ extension URLSession {
         }
     }
 
-    func topAlbumsTask(with url: URL, completionHandler: @escaping (FeedResult?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+    func topAlbumsTask(with url: URL, completionHandler: @escaping (MusicChart?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         return self.codableTask(with: url, completionHandler: completionHandler)
     }
 }

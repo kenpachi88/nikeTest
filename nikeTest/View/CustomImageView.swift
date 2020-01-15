@@ -22,8 +22,11 @@ class CustomImageView: UIImageView {
         }
         
         URLSession.shared.dataTask(with: url as URL, completionHandler: { (data, response, error) in
-       guard let data = data, let response = response as? HTTPURLResponse else { return }
+            guard let data = data, let response = response as? HTTPURLResponse else { return }
             
+            if response.statusCode != 200 {
+                print("imagelink error")
+            }
             DispatchQueue.main.async {
                 guard let imageToCache = UIImage(data: data) else {return}
                 if self.imageUrlString == urlString {

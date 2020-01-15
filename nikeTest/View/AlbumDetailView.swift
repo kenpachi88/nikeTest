@@ -90,7 +90,8 @@ class AlbumDetailView: UIView {
         
     }
     func configureDetails() {
-        guard let imageURL = album?.artworkUrl as NSURL? else {return}
+        guard let imageUrlString = album?.artworkUrl100 else {return}
+        guard let imageURL = NSURL(string: imageUrlString) else {return}
         albumImageView.image = imageCache.object(forKey: imageURL)
         albumNameLabel.text = album?.name
         artistNameLabel.text = album?.artistName
