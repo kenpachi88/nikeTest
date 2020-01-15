@@ -1,9 +1,7 @@
 //
 //  CustomImageView.swift
 //  nikeTest
-//
-//  Created by NYCDOE on 1/15/20.
-//  Copyright © 2020 hireMeKennyChen. All rights reserved.
+////  Copyright © 2020 hireMeKennyChen. All rights reserved.
 //
 
 import UIKit
