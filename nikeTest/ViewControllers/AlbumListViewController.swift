@@ -10,7 +10,7 @@ import UIKit
 class AlbumListViewController: UIViewController {
     var albums: [Album]?
     weak var delegate: AlbumListViewControllerDelegate?
-    var safeArea: UILayoutGuide!
+//    var safeArea: UILayoutGuide!
     let tableView = UITableView()
     
     
@@ -18,7 +18,7 @@ class AlbumListViewController: UIViewController {
     override func loadView() {
         super.loadView()
         view.backgroundColor = .systemPink
-        safeArea = view.layoutMarginsGuide
+//        safeArea = view.layoutMarginsGuide
         setupTableView()
     }
     func setupTableView() {
@@ -27,7 +27,7 @@ class AlbumListViewController: UIViewController {
         tableView.register(AlbumTableViewCell.self, forCellReuseIdentifier: "albumListCell")
         self.view.addSubview(tableView)
         
-        tableView.anchor(top: safeArea.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: view.frame.size.width, height: view.frame.size.height, enableInsets: true)
+        tableView.anchor(top: view.layoutMarginsGuide.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: view.frame.size.width, height: view.frame.size.height, enableInsets: true)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.rowHeight = UITableView.automaticDimension
         
