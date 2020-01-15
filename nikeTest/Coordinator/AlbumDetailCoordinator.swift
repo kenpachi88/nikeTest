@@ -24,7 +24,6 @@ class AlbumDetailCoordinator: Coordinator {
         let albumDetailViewController = AlbumDetailViewController()
         albumDetailViewController.album = album
         self.albumDetailViewController = albumDetailViewController
-        
         presenter.pushViewController(albumDetailViewController, animated: true)
     }
 }

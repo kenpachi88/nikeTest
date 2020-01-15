@@ -14,7 +14,6 @@
 		846ED0E423C607AD00B59FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846ED0E223C607AD00B59FA9 /* LaunchScreen.storyboard */; };
 		846ED0EC23C613E600B59FA9 /* FeedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ED0EB23C613E600B59FA9 /* FeedResult.swift */; };
 		846ED0EE23C614ED00B59FA9 /* TopAlbumsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ED0ED23C614ED00B59FA9 /* TopAlbumsRequest.swift */; };
-		846ED0F223C6211600B59FA9 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ED0F123C6211600B59FA9 /* ImageDownloader.swift */; };
 		846ED0F423C630D000B59FA9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ED0F323C630D000B59FA9 /* Coordinator.swift */; };
 		846ED0F723C6325800B59FA9 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ED0F623C6325800B59FA9 /* Delegates.swift */; };
 		846ED0FA23C6333600B59FA9 /* AlbumListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ED0F923C6333600B59FA9 /* AlbumListCoordinator.swift */; };
@@ -23,6 +22,8 @@
 		846ED10023C6400600B59FA9 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ED0FF23C6400600B59FA9 /* ApplicationCoordinator.swift */; };
 		846ED10323C646DA00B59FA9 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ED10223C646DA00B59FA9 /* AlbumTableViewCell.swift */; };
 		846ED10523C64E4300B59FA9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ED10423C64E4300B59FA9 /* Extensions.swift */; };
+		84F7DA0223CF3F3400C10B9B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7DA0123CF3F3400C10B9B /* CustomImageView.swift */; };
+		84F7DA0623CF4E2600C10B9B /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7DA0523CF4E2600C10B9B /* AlbumDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +36,6 @@
 		846ED0E523C607AD00B59FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846ED0EB23C613E600B59FA9 /* FeedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResult.swift; sourceTree = "<group>"; };
 		846ED0ED23C614ED00B59FA9 /* TopAlbumsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsRequest.swift; sourceTree = "<group>"; };
-		846ED0F123C6211600B59FA9 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		846ED0F323C630D000B59FA9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		846ED0F623C6325800B59FA9 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 		846ED0F923C6333600B59FA9 /* AlbumListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListCoordinator.swift; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		846ED0FF23C6400600B59FA9 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		846ED10223C646DA00B59FA9 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		846ED10423C64E4300B59FA9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84F7DA0123CF3F3400C10B9B /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		84F7DA0523CF4E2600C10B9B /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +78,13 @@
 		846ED0D623C607A900B59FA9 /* nikeTest */ = {
 			isa = PBXGroup;
 			children = (
-				846ED10123C646C300B59FA9 /* View */,
-				846ED0DB23C607A900B59FA9 /* AlbumListViewController.swift */,
-				846ED0FD23C6382400B59FA9 /* AlbumDetailViewController.swift */,
 				846ED0D723C607A900B59FA9 /* AppDelegate.swift */,
 				846ED0D923C607A900B59FA9 /* SceneDelegate.swift */,
 				846ED0EF23C61FAE00B59FA9 /* Model */,
-				846ED0F023C61FB900B59FA9 /* Network */,
 				846ED0F523C6322200B59FA9 /* Coordinator */,
+				846ED10123C646C300B59FA9 /* View */,
+				849DD04A23CF886300A88172 /* ViewControllers */,
+				846ED0F023C61FB900B59FA9 /* Network */,
 				846ED0E023C607AD00B59FA9 /* Assets.xcassets */,
 				846ED0E223C607AD00B59FA9 /* LaunchScreen.storyboard */,
 				846ED0E523C607AD00B59FA9 /* Info.plist */,
@@ -103,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				846ED0ED23C614ED00B59FA9 /* TopAlbumsRequest.swift */,
-				846ED0F123C6211600B59FA9 /* ImageDownloader.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -132,9 +132,20 @@
 			isa = PBXGroup;
 			children = (
 				846ED10223C646DA00B59FA9 /* AlbumTableViewCell.swift */,
+				84F7DA0523CF4E2600C10B9B /* AlbumDetailView.swift */,
 				846ED10423C64E4300B59FA9 /* Extensions.swift */,
+				84F7DA0123CF3F3400C10B9B /* CustomImageView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		849DD04A23CF886300A88172 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				846ED0DB23C607A900B59FA9 /* AlbumListViewController.swift */,
+				846ED0FD23C6382400B59FA9 /* AlbumDetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,14 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F7DA0623CF4E2600C10B9B /* AlbumDetailView.swift in Sources */,
 				846ED0F723C6325800B59FA9 /* Delegates.swift in Sources */,
 				846ED0DC23C607A900B59FA9 /* AlbumListViewController.swift in Sources */,
 				846ED0FA23C6333600B59FA9 /* AlbumListCoordinator.swift in Sources */,
+				84F7DA0223CF3F3400C10B9B /* CustomImageView.swift in Sources */,
 				846ED0FE23C6382400B59FA9 /* AlbumDetailViewController.swift in Sources */,
 				846ED0EC23C613E600B59FA9 /* FeedResult.swift in Sources */,
 				846ED0D823C607A900B59FA9 /* AppDelegate.swift in Sources */,
 				846ED0EE23C614ED00B59FA9 /* TopAlbumsRequest.swift in Sources */,
-				846ED0F223C6211600B59FA9 /* ImageDownloader.swift in Sources */,
 				846ED0DA23C607A900B59FA9 /* SceneDelegate.swift in Sources */,
 				846ED0F423C630D000B59FA9 /* Coordinator.swift in Sources */,
 				846ED10323C646DA00B59FA9 /* AlbumTableViewCell.swift in Sources */,
@@ -357,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VSMG7P5BE;
 				INFOPLIST_FILE = nikeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VSMG7P5BE;
 				INFOPLIST_FILE = nikeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

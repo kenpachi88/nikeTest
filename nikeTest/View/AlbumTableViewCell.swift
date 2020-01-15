@@ -31,32 +31,27 @@ class AlbumTableViewCell: UITableViewCell {
     }()
     
     
-    private let albumImage : UIImageView = {
-        let imgView = UIImageView()
+    private let albumImageView : CustomImageView = {
+        let imgView = CustomImageView()
         imgView.contentMode = .scaleAspectFit
         imgView.clipsToBounds = true
-        let actIndView = UIActivityIndicatorView()
-        actIndView.center = imgView.center
-        actIndView.style = .large
-        actIndView.startAnimating()
-        imgView.addSubview(actIndView)
         return imgView
     }()
     
     func configureWithAlbum(_ album: Album) {
         albumNameLabel.text = album.name
         artistNameLabel.text = album.artistName
-        albumImage.image = UIImage()
+        albumImageView.loadImageUsingUrlString(urlString: album.artworkUrl100)
     }
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(albumNameLabel)
         addSubview(artistNameLabel)
-        addSubview(albumImage)
+        addSubview(albumImageView)
         
-        albumImage.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: nil, paddingTop: 5, paddingLeft: 5, paddingBottom: 5, paddingRight: 0, width: 90, height: 0, enableInsets: false)
-        albumNameLabel.anchor(top: topAnchor, left: albumImage.rightAnchor, bottom: nil, right: rightAnchor, paddingTop: 20, paddingLeft: 10, paddingBottom: 0, paddingRight: 0, width: frame.size.width / 2, height: 0, enableInsets: false)
-        artistNameLabel.anchor(top: albumNameLabel.bottomAnchor, left: albumImage.rightAnchor, bottom: nil, right: rightAnchor, paddingTop: 0, paddingLeft: 10, paddingBottom: 0, paddingRight: 0, width: frame.size.width / 2, height: 0, enableInsets: false)
+        albumImageView.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: nil, paddingTop: 5, paddingLeft: 5, paddingBottom: 5, paddingRight: 0, width: 90, height: 0, enableInsets: false)
+        albumNameLabel.anchor(top: topAnchor, left: albumImageView.rightAnchor, bottom: nil, right: rightAnchor, paddingTop: 20, paddingLeft: 10, paddingBottom: 0, paddingRight: 0, width: frame.size.width / 2, height: 0, enableInsets: false)
+        artistNameLabel.anchor(top: albumNameLabel.bottomAnchor, left: albumImageView.rightAnchor, bottom: nil, right: rightAnchor, paddingTop: 0, paddingLeft: 10, paddingBottom: 0, paddingRight: 0, width: frame.size.width / 2, height: 0, enableInsets: false)
         
         
         
